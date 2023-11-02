@@ -1,6 +1,8 @@
+1)Java Program to Check Even or Odd Integers
+
 import java.util.*;
 
-class Basics {
+class EvenOdd {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter number:");
@@ -12,5 +14,22 @@ class Basics {
             System.out.println("Odd number");
         }
 
+    }
+}
+
+2)Java Program to Find Largest Among 3 Numbers
+class  Largestofthree {
+    public static void main(String args[]) {
+        int x = 7, y = 20, z = 56;
+
+        int largest;
+        if (x > y && x < z) {
+            largest = x;
+        } else if (y >= x && y >= z) {
+            largest = y;
+        } else {
+            largest = z;
+        }
+        System.out.println("largest number :" + largest);
     }
 }
