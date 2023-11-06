@@ -16,7 +16,7 @@ class EvenOdd {
 
     }
 }
-
+________________________________________________________________________________________________
 2)Java Program to Find Largest Among 3 Numbers
 class  Largestofthree {
     public static void main(String args[]) {
@@ -33,7 +33,7 @@ class  Largestofthree {
         System.out.println("largest number :" + largest);
     }
 }
-
+___________________________________________________________________________________________________
 3)Prime Number Program in Java
 import java.util.*;
 
@@ -60,6 +60,26 @@ class PrimeNumbers {
                 System.out.println("prime number");
             }
         }
+    }
+}
+
+___________________________________________________________________________________________
+4)Java Program to Find if a Given Year is a Leap Year
+
+import java.util.*;
+
+class LeapYear {
+    public static void main(String args[]) {
+        int i, m = 0, flag = 0;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number:");
+        int y = sc.nextInt();
+        if (y % 4 == 0 && y % 100 != 0 || y % 400 == 0) {
+            System.out.println("Leap year");
+        } else {
+            System.out.println("Not Leap year");
+        }
+
     }
 }
 
