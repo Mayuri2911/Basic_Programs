@@ -83,3 +83,61 @@ class LeapYear {
     }
 }
 
+5)Factorial Program using loop in java
+
+import java.util.*;
+
+class FactorialNumber {
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number:");
+        int n = sc.nextInt();
+        int i, fact = 1;
+
+        for (i = 1; i <= n; i++) {
+            fact = fact * i;
+        }
+        System.out.println("Factorial of " + n + " is: " + fact);
+    }
+}
+______________________________________________________________________________________________
+
+6)Java Program to Check Whether the Character is Vowel or Consonant
+
+class VowelConsonent {
+
+    public static void main(String args[]) {
+        char ch = 'b';
+
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+            System.out.println("It is a Vowel");
+        } else {
+            System.out.println("It is Consonent");
+        }
+
+    }
+}
+_____________________________________________________________________________________________________
+7) Fibonacci series in Java
+import java.util.*;
+
+class FibonnaciSeries {
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Number");
+        int count = sc.nextInt();
+
+        int n1 = 0, n2 = 1, n3;
+        System.out.print(n1 + " " + n2);
+
+        for (int i = 2; i < count; ++i) {
+            n3 = n1 + n2;
+            System.out.print(" " + n3);
+            n1 = n2;
+            n2 = n3;
+        }
+
+    }
+}
