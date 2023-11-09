@@ -35,6 +35,7 @@ class  Largestofthree {
 }
 ___________________________________________________________________________________________________
 3)Prime Number Program in Java
+
 import java.util.*;
 
 class PrimeNumbers {
@@ -82,7 +83,7 @@ class LeapYear {
 
     }
 }
-
+____________________________________________________________________________
 5)Factorial Program using loop in java
 
 import java.util.*;
@@ -141,3 +142,100 @@ class FibonnaciSeries {
 
     }
 }
+___________________________________________________________________________________________
+8) Print table 
+
+import java.util.*;
+
+class PrintTable {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number:");
+        int n = sc.nextInt();
+
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(n * i);
+        }
+    }
+}
+
+____________________________________________________________________________________________
+
+9) Armstrong Number in Java
+
+import java.util.*;
+
+class ArmstrongNumber {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number:");
+        int number = sc.nextInt();
+
+        if (isArmstrongNumber(number)) {
+            System.out.println("Armstrong number");
+        } else {
+            System.out.println("Not Armstrong number");
+        }
+    }
+
+    private static boolean isArmstrongNumber(int num) {
+        int originalnumber, remainder, result = 0, n = 0;
+        originalnumber = num;
+
+        for (originalnumber = num; originalnumber != 0; originalnumber /= 10, ++n)
+            ;
+        originalnumber = num;
+
+        while (originalnumber != 0) {
+            remainder = originalnumber % 10;
+            result += Math.pow(remainder, n);
+            originalnumber /= 10;
+
+        }
+        return result == num;
+
+    }
+}
+________________________________________________________________________________________
+
+10)Sum of digits of a number.
+
+import java.util.*;
+
+class SumOfDigitsNumber {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number:");
+        int n = sc.nextInt();
+        int digit, sum = 0;
+        while (n > 0) {
+            digit = n % 10;
+            sum = sum + digit;
+            n = n / 10;
+
+        }
+        System.out.println("sum of number :" + sum);
+    }
+}
+
+________________________________________________________________________________
+
+11)
+import java.util.*;
+
+class ReverseDigits {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number:");
+        int n = sc.nextInt();
+        int reverse = 0;
+        while (n != 0) {
+            int remainder = n % 10;
+            reverse = reverse * 10 + remainder;
+            n = n / 10;
+
+        }
+        System.out.println("reverse number  :" + reverse);
+    }
+}
+
